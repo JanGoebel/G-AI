@@ -22,6 +22,7 @@ To use this tool you need to install an MCP client. [Claude Desktop](https://cla
 
 Different MCP Clients have different ways of installing the servers. But mostly it runs down to a json config file that looks similar to this:
 
+<pre>
   "mcpServers": {
     "G-AI": {
       "command": "npx",
@@ -31,6 +32,7 @@ Different MCP Clients have different ways of installing the servers. But mostly 
       ]
     }
   }
+</pre>
 
 In Claude Desktop you can find this file through File -> Settings -> Developer -> Edit Config. See this [article from claude](https://support.claude.com/de/articles/10949351-erste-schritte-mit-lokalen-mcp-servern-auf-claude-desktop) for more details.
 There might be multiple servers separated with comma in the "mcpServers" json element.
