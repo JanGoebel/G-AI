@@ -53,8 +53,10 @@ MCP features template-prompts. I'm planning on creating some that will automatic
 
 ![G-AI example prompt](pictures/exampleprompt.png)
 
+<prev>
 C:\Temp\src\LabVIEW MCP Server SDK.lvproj
-analyze this LabVIEW project and see how I can implement XYZ.
+Analyze this LabVIEW project and see how I can implement XYZ.
+</prev>
 
 ## Troubleshooting
 To troubleshoot issues related to MCP servers in claude desktop (and other clients) there's usually a log-file tracking all mcp interactions for a specific server.
