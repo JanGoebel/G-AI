@@ -63,3 +63,6 @@ More infos on MCP debugging [here](https://modelcontextprotocol.io/legacy/tools/
 
 ## Dependencies
 This toolkits dependencies are automatically installed with the vi package in the builds folder. Main dependency is the [LabVIEW MCP Server Toolkit](https://github.com/JanGoebel/LabVIEW-MCP-Server-Toolkit).
+
+## Security Warning
+This toolkit may share any details of your LabVIEW Project with Claude Desktop, so make sure to only run this on code you own or have permission to share.
