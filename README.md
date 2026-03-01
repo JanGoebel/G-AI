@@ -51,10 +51,10 @@ When clicking "Manage Connectors" you can enable all tools to not require confir
 ## Prompts
 MCP features template-prompts. I'm planning on creating some that will automatically insert the current projects URL in your chat message field in claude code but it's not in place yet. Currently prompts like this will work:
 
-<prev>
-"C:\Temp\src\My Project.lvproj
-Analyze this LabVIEW project and tell me how to implement XYZ."
-</prev>
+<pre>
+C:\Temp\src\My Project.lvproj
+Analyze this LabVIEW project and tell me how to implement XYZ.
+</pre>
 
 ## Troubleshooting
 To troubleshoot issues related to MCP servers in claude desktop (and other clients) there's usually a log-file tracking all mcp interactions for a specific server.
