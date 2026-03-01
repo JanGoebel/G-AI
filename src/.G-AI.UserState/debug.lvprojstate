@@ -1,0 +1,49 @@
+<Configuration>
+  <Target name="My Computer">
+    <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
+    <VI name="MCP Server.lvlib:Convert Image To Base64.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="1693"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="MCP Server.lvlib:MCP Handler.lvclass:Do Request.vi">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="1227"/>
+          <SignalUID value="2169"/>
+          <SignalUID value="1167"/>
+          <SignalUID value="2324"/>
+        </Generic>
+      </Probes>
+    </VI>
+    <VI name="MCP Server.lvlib:MCP Handler.lvclass:Do Request.vi:5900001">
+      <Breakpoints>
+        <NodeIndexes>
+        </NodeIndexes>
+        <SignalIndexes>
+        </SignalIndexes>
+      </Breakpoints>
+      <Probes>
+        <Generic>
+          <SignalUID value="1167"/>
+          <SignalUID value="1227"/>
+          <SignalUID value="2169"/>
+        </Generic>
+      </Probes>
+    </VI>
+  </Target>
+</Configuration>
