@@ -37,16 +37,19 @@ In Claude Desktop you can find this file through File -> Settings -> Developer -
 There might be multiple servers separated with comma in the "mcpServers" json element.
 If you have issues modifying the file correctly, ask a chatbot of your choice for help, they'll know what to do.
 
-Once the file is correctly formatted, you should see the Server in the Claude Desktop Settings -> Developer menu. If the server is running (run main.vi) it should show as "running" in that menu.
+Once the file is correctly formatted, you should see the Server in the Claude Desktop Settings -> Developer menu. If the server is running it should show as "running" in that menu.
+
+![claude desktop mcp menu](pictures/mcpmenu.png)
+
 
 ## Claude Code
 In Claude code in a new chat window hit the "+" icon -> Connectors to see available connectors. G-AI should show up here and be activated.
 
-![connectors menu in claude code](pictures/newchat.png)
+![connectors menu in claude desktop](pictures/newchat.png)
 
 When clicking "Manage Connectors" you can enable all tools to not require confirmation. This can also be done on the first time they're being used:
 
-![manage connectors menu in claude code](pictures/manageconnectors.png)
+![manage connectors menu in claude desktop](pictures/manageconnectors.png)
 
 ## Prompts
 MCP features template-prompts. I'm planning on creating some that will automatically insert the current projects URL in your chat message field in claude code but it's not in place yet. Currently prompts like this will work:
