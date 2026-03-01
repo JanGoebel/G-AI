@@ -18,7 +18,7 @@ Install the latest vi package from builds/G-AI to include the launcher in your t
 ![LabVIEW tools menu after installation of G-AI](pictures/toolsmenu.png)
 
 ## MCP Installation
-To use this tool you need to install an MCP client. Claude Desktop is the one this project was tested on. It has a free trial, but for extensive projects a paid subscription will be required, since this process will use many tokens.
+To use this tool you need to install an MCP client. [Claude Desktop](https://claude.com/de-de/download) is the one this project was tested on. It has a free trial, but for extensive projects a paid subscription will be required, since this process will use many tokens.
 
 Different MCP Clients have different ways of installing the servers. But mostly it runs down to a json config file that looks similar to this:
 
@@ -32,7 +32,7 @@ Different MCP Clients have different ways of installing the servers. But mostly 
     }
   }
 
-In Claude Desktop you can find this file through File -> Settings -> Developer -> Edit Config.
+In Claude Desktop you can find this file through File -> Settings -> Developer -> Edit Config. See this [article from claude](https://support.claude.com/de/articles/10949351-erste-schritte-mit-lokalen-mcp-servern-auf-claude-desktop) for more details.
 There might be multiple servers separated with comma in the "mcpServers" json element.
 If you have issues modifying the file correctly, ask a chatbot of your choice for help, they'll know what to do.
 
@@ -47,5 +47,15 @@ When clicking "Manage Connectors" you can enable all tools to not require confir
 
 ![manage connectors menu in claude code](pictures/manageconnectors.png)
 
+## Prompts
+MCP features template-prompts. I'm planning on creating some that will automatically insert the current projects URL in your chat message field in claude code but it's not in place yet. Currently prompts like this will work:
+
+![G-AI example prompt](pictures/exampleprompt.png)
+
+C:\Temp\src\LabVIEW MCP Server SDK.lvproj
+analyze this LabVIEW project and see how I can implement XYZ.
+
 ## Troubleshooting
 To troubleshoot issues related to MCP servers in claude desktop (and other clients) there's usually a log-file tracking all mcp interactions for a specific server.
+
+More infos on MCP debugging [here](https://modelcontextprotocol.io/legacy/tools/debugging).
