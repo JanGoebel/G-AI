@@ -52,8 +52,8 @@ When clicking "Manage Connectors" you can enable all tools to not require confir
 MCP features template-prompts. I'm planning on creating some that will automatically insert the current projects URL in your chat message field in claude code but it's not in place yet. Currently prompts like this will work:
 
 <prev>
-C:\Temp\src\My Project.lvproj
-Analyze this LabVIEW project and tell me how to implement XYZ.
+  C:\Temp\src\My Project.lvproj
+  Analyze this LabVIEW project and tell me how to implement XYZ.
 </prev>
 
 ## Troubleshooting
