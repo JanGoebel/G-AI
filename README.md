@@ -12,11 +12,12 @@ A LabVIEW MCP Server allowing you to query information from LabVIEW Code. It can
 If I have the MCP Server registered in Claude Desktop I can ask "Analyze this Project and tell me how to optimize it. C:/../test.lvproj". The Model will then propably call "get_project" multiple times to read the project file first and potentially all contained libraries. It will then call "get_vi_details" multiple times to get the description and block diagram screenshot of the most important VIs in the project. With all that information it can then provide guidance on the code.
 
 ## Installation
+### Install Server
 Install the latest vi package from builds/G-AI to include the launcher in your tools menu.
 
 ![LabVIEW tools menu after installation of G-AI](pictures/toolsmenu.png)
 
-## MCP Installation
+### Install Client
 To use this tool you need to install an MCP client. [Claude Desktop](https://claude.com/de-de/download) is the one this project was tested on. It has a free trial, but for extensive projects a paid subscription will be required, since this process will use many tokens.
 
 Different MCP Clients have different ways of installing the servers. But mostly it's a json config file that looks similar to this:
@@ -41,15 +42,7 @@ Once the file is correctly formatted, you should see the Server in the Claude De
 
 ![claude desktop mcp menu](pictures/mcpmenu.png)
 
-
-## Claude Code
-In Claude code in a new chat window hit the "+" icon -> Connectors to see available connectors. G-AI should show up here and be activated.
-
-![connectors menu in claude desktop](pictures/newchat.png)
-
-When clicking "Manage Connectors" you can enable all tools to not require confirmation. This can also be done on the first time they're being used:
-
-![manage connectors menu in claude desktop](pictures/manageconnectors.png)
+Done, you should be able to ask Claude Desktop to analyze LabVIEW code now.
 
 ## Prompts
 MCP features template-prompts. I'm planning on creating some that will automatically insert the current projects URL in your chat message field in claude code but it's not in place yet. Currently prompts like this will work:
@@ -60,12 +53,19 @@ Analyze this LabVIEW project and tell me how to implement XYZ.
 </pre>
 
 ## Troubleshooting
+### Claude Desktop Connectors
+In Claude Desktop in a new chat window hit the "+" icon -> Connectors to see available connectors. G-AI should show up here and be activated.
+
+![connectors menu in claude desktop](pictures/newchat.png)
+
+When clicking "Manage Connectors" you can enable all tools to not require confirmation. This can also be done on the first time they're being used:
+
+![manage connectors menu in claude desktop](pictures/manageconnectors.png)
+
+### Logs
 To troubleshoot issues related to MCP servers in claude desktop (and other clients) there's usually a log-file tracking all mcp interactions for a specific server.
 
 More infos on MCP debugging [here](https://modelcontextprotocol.io/legacy/tools/debugging).
-
-## Dependencies
-This toolkits dependencies are automatically installed with the vi package in the builds folder. Main dependency is the [LabVIEW MCP Server Toolkit](https://github.com/JanGoebel/LabVIEW-MCP-Server-Toolkit).
 
 ## Security Warning
 This toolkit may share any details of your LabVIEW Project with Claude Desktop, so make sure to only run this on code you own or have permission to share.
