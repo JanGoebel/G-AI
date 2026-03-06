@@ -10,12 +10,6 @@
 	<Item Name="SubIVs" Type="Folder">
 		<Item Name="Is Valid File Type.vi" Type="VI" URL="../Is Valid File Type.vi"/>
 	</Item>
-	<Item Name="Tools" Type="Folder">
-		<Item Name="get_control.vi" Type="VI" URL="../get_control.vi"/>
-		<Item Name="get_enum.vi" Type="VI" URL="../get_enum.vi"/>
-		<Item Name="get_project.vi" Type="VI" URL="../get_project.vi"/>
-		<Item Name="get_vi_details.vi" Type="VI" URL="../get_vi_details.vi"/>
-	</Item>
 	<Item Name="launcher.vi" Type="VI" URL="../launcher.vi"/>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 </Library>

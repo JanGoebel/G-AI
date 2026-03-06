@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-03-01 20:58:44" Modified_Date="2026-03-01 21:53:35" Creator="jgoebel" Comments="" ID="6080d14f8c2817b1ddae8aa88ed7b338">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-03-01 20:58:44" Modified_Date="2026-03-06 12:35:58" Creator="jgoebel" Comments="" ID="73df3794db3bc1d4bed31c04278261f3">
   <Library_General_Settings>
     <Package_File_Name>jgoebel_lib_G_AI</Package_File_Name>
-    <Library_Version>1.0.0.6</Library_Version>
+    <Library_Version>1.0.1.9</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\builds\G-AI\G-AI Source Distribution</Library_Source_Folder>
     <Library_Output_Folder>..\builds\G-AI</Library_Output_Folder>
@@ -55,7 +55,7 @@ After running the MCP Server you can add it to a MCP client of your choice (e.g.
       <Copyright/>
       <Packager/>
       <URL>https://www.jan-goebel.com</URL>
-      <Release_Notes>Initial Release, basic project analysis capabilities.</Release_Notes>
+      <Release_Notes>Implemented tools placed outside the core library in a simple folder, allowing for easier contribution/extension in the future.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
@@ -140,9 +140,6 @@ After running the MCP Server you can add it to a MCP client of your choice (e.g.
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
-      <Compile_Exclusions>
-        <Path/>
-      </Compile_Exclusions>
       <Place_Folder_Contents>
         <Path/>
       </Place_Folder_Contents>
