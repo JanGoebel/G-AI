@@ -8,7 +8,12 @@
 </Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="SubIVs" Type="Folder">
+		<Item Name="Get Ctl Ref.vi" Type="VI" URL="../Get Ctl Ref.vi"/>
+		<Item Name="Get VI Ref.vi" Type="VI" URL="../Get VI Ref.vi"/>
 		<Item Name="Is Valid File Type.vi" Type="VI" URL="../Is Valid File Type.vi"/>
+		<Item Name="Server Data FGV.vi" Type="VI" URL="../Server Data FGV.vi"/>
+		<Item Name="Set CTL Ref.vi" Type="VI" URL="../Set CTL Ref.vi"/>
+		<Item Name="Set VI Ref.vi" Type="VI" URL="../Set VI Ref.vi"/>
 	</Item>
 	<Item Name="launcher.vi" Type="VI" URL="../../launcher.vi"/>
 	<Item Name="main.vi" Type="VI" URL="../main.vi"/>

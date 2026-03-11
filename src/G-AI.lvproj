@@ -13,8 +13,13 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Tools" Type="Folder">
+			<Item Name="add_object_to_vi.vi" Type="VI" URL="../tools/add_object_to_vi.vi"/>
+			<Item Name="cleanup_vi.vi" Type="VI" URL="../tools/cleanup_vi.vi"/>
+			<Item Name="connect_objects.vi" Type="VI" URL="../tools/connect_objects.vi"/>
+			<Item Name="create_new_vi.vi" Type="VI" URL="../tools/create_new_vi.vi"/>
 			<Item Name="get_control.vi" Type="VI" URL="../tools/get_control.vi"/>
 			<Item Name="get_enum.vi" Type="VI" URL="../tools/get_enum.vi"/>
+			<Item Name="get_object_terminals.vi" Type="VI" URL="../tools/get_object_terminals.vi"/>
 			<Item Name="get_project.vi" Type="VI" URL="../tools/get_project.vi"/>
 			<Item Name="get_vi_details.vi" Type="VI" URL="../tools/get_vi_details.vi"/>
 		</Item>

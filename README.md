@@ -5,6 +5,8 @@
 ## Overview
 A LabVIEW MCP Server allowing you to query information from LabVIEW Code. It can read Project-, Library- and Class-Files and look at VI blockdiagrams. This way you can use a Large Language Model to "read" LabVIEW code and give advise on full projects.
 
+![G-AI Banner Image](pictures/code_generation.png)
+
 ## MCP Overview
 [MCP](https://modelcontextprotocol.io/docs/getting-started/intro) is a plugin-interface for Large Language Model Chatbots. An MCP Client is a Chat Application (e.g. Claude Desktop). An MCP Server is the Plugin itself providing the chatbot with functions (tools) that it can call during a conversation.
 
