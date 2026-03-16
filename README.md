@@ -5,6 +5,9 @@
 ## Overview
 A LabVIEW MCP Server allowing you to query information from LabVIEW Code. It can read Project-, Library- and Class-Files and look at VI blockdiagrams. This way you can use a Large Language Model to "read" LabVIEW code and give advise on full projects.
 
+The Assistant can also generate LabVIEW code, though this functionality is not fully implemented at the moment. If you want to try the code creation/editing capabilities I recommend looking at the older repo that has a still working version of this:
+https://github.com/JanGoebel/labview_assistant
+
 ![G-AI Banner Image](pictures/code_generation.png)
 
 ## MCP Overview
