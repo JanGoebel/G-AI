@@ -3,10 +3,7 @@
 # G-AI
 
 ## Overview
-A LabVIEW MCP Server allowing you to query information from LabVIEW Code. It can read Project-, Library- and Class-Files and look at VI blockdiagrams. This way you can use a Large Language Model to "read" LabVIEW code and give advise on full projects.
-
-The Assistant can also generate LabVIEW code, though this functionality is not fully implemented at the moment. If you want to try the code creation/editing capabilities I recommend looking at the older repo that has a still working version of this:
-https://github.com/JanGoebel/labview_assistant
+A LabVIEW MCP Server allowing you to control LabVIEW with an AI-Chatbot. It can read Project-, Library- and Class-Files and look at VI blockdiagrams. This way you can use a Large Language Model to "read" LabVIEW code and give advise on full projects. It can also create new VIs and add code to them, still this feature is not at all feature complete.
 
 ![G-AI Banner Image](pictures/code_generation.png)
 
@@ -55,6 +52,10 @@ MCP features template-prompts. I'm planning on creating some that will automatic
 <pre>
 C:\Temp\src\My Project.lvproj
 Analyze this LabVIEW project and tell me how to implement XYZ.
+</pre>
+
+<pre>
+In LabVIEW, create a VI that generates a random number between a min and a max value.
 </pre>
 
 ## Troubleshooting

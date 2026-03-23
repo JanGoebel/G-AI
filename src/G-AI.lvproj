@@ -12,18 +12,27 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Modules" Type="Folder">
+			<Item Name="G-AI Core.lvlib" Type="Library" URL="../G-AI Core/G-AI Core.lvlib"/>
+		</Item>
+		<Item Name="Testers" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Test G-AI Core API.vi" Type="VI" URL="../G-AI Core/Test G-AI Core API.vi"/>
+		</Item>
 		<Item Name="Tools" Type="Folder">
 			<Item Name="add_object_to_vi.vi" Type="VI" URL="../tools/add_object_to_vi.vi"/>
 			<Item Name="cleanup_vi.vi" Type="VI" URL="../tools/cleanup_vi.vi"/>
 			<Item Name="connect_objects.vi" Type="VI" URL="../tools/connect_objects.vi"/>
+			<Item Name="create_control.vi" Type="VI" URL="../tools/create_control.vi"/>
 			<Item Name="create_new_vi.vi" Type="VI" URL="../tools/create_new_vi.vi"/>
+			<Item Name="get_available_objects.vi" Type="VI" URL="../tools/get_available_objects.vi"/>
 			<Item Name="get_control.vi" Type="VI" URL="../tools/get_control.vi"/>
 			<Item Name="get_enum.vi" Type="VI" URL="../tools/get_enum.vi"/>
 			<Item Name="get_object_terminals.vi" Type="VI" URL="../tools/get_object_terminals.vi"/>
 			<Item Name="get_project.vi" Type="VI" URL="../tools/get_project.vi"/>
 			<Item Name="get_vi_details.vi" Type="VI" URL="../tools/get_vi_details.vi"/>
+			<Item Name="rename_object.vi" Type="VI" URL="../tools/rename_object.vi"/>
 		</Item>
-		<Item Name="G-AI Core.lvlib" Type="Library" URL="../G-AI Core/G-AI Core.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="G-AI Source Distribution" Type="Source Distribution">
@@ -45,7 +54,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{9A6AA5AD-321F-48CC-A2C3-62837037F383}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
-				<Property Name="Bld_version.build" Type="Int">10</Property>
+				<Property Name="Bld_version.build" Type="Int">13</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/G-AI Source Distribution</Property>
@@ -54,20 +63,20 @@
 				<Property Name="Destination[2].destName" Type="Str">MCP tools</Property>
 				<Property Name="Destination[2].path" Type="Path">../builds/NI_AB_PROJECTNAME/G-AI Source Distribution/tools</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4F0DF4D2-EA33-4CB8-8425-823906B67D34}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{05D6038A-C2EC-4DBB-A92C-5914BA47848F}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/My Computer/G-AI Core.lvlib</Property>
-				<Property Name="Source[1].Library.allowMissingMembers" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyDestination" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">2</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Tools</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[1].type" Type="Str">Library</Property>
-				<Property Name="Source[2].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.applyInclusion" Type="Bool">true</Property>
-				<Property Name="Source[2].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[2].destinationIndex" Type="Int">2</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Tools</Property>
+				<Property Name="Source[1].type" Type="Str">Container</Property>
+				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/My Computer/Modules/G-AI Core.lvlib</Property>
+				<Property Name="Source[2].Library.allowMissingMembers" Type="Bool">true</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">Include</Property>
-				<Property Name="Source[2].type" Type="Str">Container</Property>
+				<Property Name="Source[2].type" Type="Str">Library</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
 			</Item>
 		</Item>

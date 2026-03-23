@@ -1,7 +1,7 @@
 <Configuration>
   <Target name="My Computer">
     <EnableDebuggingForAllVIs>0</EnableDebuggingForAllVIs>
-    <VI name="G-AI Core.lvlib:Get VI Ref.vi">
+    <VI name="G-AI Core - legacy.lvlib:Get VI Ref.vi">
       <Breakpoints>
         <NodeIndexes>
         </NodeIndexes>
@@ -55,18 +55,6 @@
           <SignalUID value="1167"/>
           <SignalUID value="1227"/>
           <SignalUID value="2169"/>
-        </Generic>
-      </Probes>
-    </VI>
-    <VI name="add_object_to_vi.vi">
-      <Breakpoints>
-        <NodeIndexes>
-        </NodeIndexes>
-        <SignalIndexes>
-        </SignalIndexes>
-      </Breakpoints>
-      <Probes>
-        <Generic>
         </Generic>
       </Probes>
     </VI>

@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-03-01 20:58:44" Modified_Date="2026-03-06 12:35:58" Creator="jgoebel" Comments="" ID="73df3794db3bc1d4bed31c04278261f3">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2026-03-01 20:58:44" Modified_Date="2026-03-23 17:57:07" Creator="jgoebel" Comments="" ID="1f58efb351506c81dcd810d3376119b6">
   <Library_General_Settings>
     <Package_File_Name>jgoebel_lib_G_AI</Package_File_Name>
-    <Library_Version>1.0.1.9</Library_Version>
+    <Library_Version>1.1.1.11</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..\builds\G-AI\G-AI Source Distribution</Library_Source_Folder>
     <Library_Output_Folder>..\builds\G-AI</Library_Output_Folder>
@@ -17,6 +17,7 @@
   </Library_General_Settings>
   <Advanced_Settings>
     <Package_Dependencies>
+      <External_Dependencies>delacor_lib_qmh &gt;= 7.1.2.1547</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_http_server &gt;= 0.5.3.36</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_http_utils &gt;= 1.1.0.54</External_Dependencies>
       <External_Dependencies>illuminatedg_lib_ig_simple_msg &gt;= 1.0.0.35</External_Dependencies>
@@ -26,7 +27,8 @@
       <External_Dependencies>illuminatedg_lib_ig_websocket_stream &gt;= 1.1.0.16</External_Dependencies>
       <External_Dependencies>jdp_science_jsontext &gt;= 1.9.1.125</External_Dependencies>
       <External_Dependencies>jdp_science_lib_common_utilities &gt;= 1.4.2.19</External_Dependencies>
-      <External_Dependencies>jgoebel_lib_labview_mcp_server_sdk &gt;= 2.2.4.27</External_Dependencies>
+      <External_Dependencies>jgoebel_lib_labview_mcp_server_sdk &gt;= 2.2.5.28</External_Dependencies>
+      <Direct_Dependencies>delacor_lib_qmh-7.1.2.1547</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_http_server-0.5.3.36</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_http_utils-1.1.0.54</Direct_Dependencies>
       <Direct_Dependencies>illuminatedg_lib_ig_simple_msg-1.0.0.35</Direct_Dependencies>
@@ -36,7 +38,7 @@
       <Direct_Dependencies>illuminatedg_lib_ig_websocket_stream-1.1.0.16</Direct_Dependencies>
       <Direct_Dependencies>jdp_science_jsontext-1.9.1.125</Direct_Dependencies>
       <Direct_Dependencies>jdp_science_lib_common_utilities-1.4.2.19</Direct_Dependencies>
-      <Direct_Dependencies>jgoebel_lib_labview_mcp_server_sdk-2.2.4.27</Direct_Dependencies>
+      <Direct_Dependencies>jgoebel_lib_labview_mcp_server_sdk-2.2.5.28</Direct_Dependencies>
     </Package_Dependencies>
     <Custom_Action_VIs>
       <Pre-Build_VI/>
@@ -55,7 +57,7 @@ After running the MCP Server you can add it to a MCP client of your choice (e.g.
       <Copyright/>
       <Packager/>
       <URL>https://www.jan-goebel.com</URL>
-      <Release_Notes>Implemented tools placed outside the core library in a simple folder, allowing for easier contribution/extension in the future.</Release_Notes>
+      <Release_Notes>Introduced DQMH module for G-AI core that keeps references alive. Added scripting basics so it can create simple new VIs.</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
