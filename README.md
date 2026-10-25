@@ -2,6 +2,8 @@
 
 # G-AI
 
+Important: This Project is currently not hold, since Nigel Code Generation and the Zühlke labview-mcp Server exceeded it's capabilities by far.
+
 ## Overview
 A LabVIEW MCP Server allowing you to control LabVIEW with an AI-Chatbot. It can read Project-, Library- and Class-Files and look at VI blockdiagrams. This way you can use a Large Language Model to "read" LabVIEW code and give advise on full projects. It can also create new VIs and add code to them, still this feature is not at all feature complete.
 
